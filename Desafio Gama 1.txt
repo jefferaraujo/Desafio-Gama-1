@@ -1,0 +1,11 @@
+import random
+with open("c:\\arquivospy\\primeiroarquivo.txt", "r", encoding="latin1") as file:
+    linhas = []
+
+    for linha in file:
+        linhas.append(linha)
+        random.shuffle(linhas)
+
+    print(f"Os 3 primeiros são os ganhadores")
+    for linha in linhas:
+        print(linha)
